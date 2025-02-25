@@ -1,4 +1,14 @@
-echo "node_modules/" >> .gitignore
-echo "backend/node_modules/" >> .gitignore
-echo "frontend/node_modules/" >> .gitignore
-echo "backend/dist/" >> .gitignore
+/node_modules
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+dist/
+build/
+
+.env
+
+*.log
+
+
